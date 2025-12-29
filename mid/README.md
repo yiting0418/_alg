@@ -1,7 +1,7 @@
 # KNN演算法實作
 
 ### 題目
-KNN演算法 Iris資料集分類實作
+Iris資料集分類實作
 
 ### 步驟
 #### 1. 距離計算 (Euclidean Distance)
