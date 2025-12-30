@@ -1,7 +1,9 @@
 [Gemini](https://gemini.google.com/share/ba959fead125)
+
 將 'horse' 轉換成 'ros' 的過程：
 
 === 1. 初始化表格邊框 ===
+
 邊框初始化完成 (第一列代表全插入，第一欄代表全刪除)。
 
 === 2. 開始填表推論 ===
