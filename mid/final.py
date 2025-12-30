@@ -50,12 +50,12 @@ def knn_predict(x_train, y_train, test_point, k=5):
     return prediction
 
 #預測與評估
-k_value = 5
+k = 5
 correct_cnt = 0
 predictions = []
 
 for i, point in enumerate(x_test):
-    pred = knn_predict(x_train, y_train, point, k=k_value)
+    pred = knn_predict(x_train, y_train, point, k=k)
     predictions.append(pred)
     
     if pred == y_test[i]:
