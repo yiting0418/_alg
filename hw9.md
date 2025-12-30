@@ -1,4 +1,5 @@
 [Gemini](https://gemini.google.com/share/ba959fead125)
+
 將 'horse' 轉換成 'ros' 的過程：
 
 === 1. 初始化表格邊框 ===
