@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import copy
 
 # --- 1. 資料讀取 (保持原樣) ---
 def load_data(filename):
