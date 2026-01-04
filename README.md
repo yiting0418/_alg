@@ -18,7 +18,7 @@ HW | 說明
 [hw4](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%2213Zi_fZdH4kl8wWpmJQ2ZNopMOSmSe4Ne%22%5D,%22action%22:%22open%22,%22userId%22:%22101953747931467732443%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)|使用AI Studio了解 python的itertools怎麼用
 [hw5](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221svj4IBD2HGWfJBkVImugKzEmpggjHILI%22%5D,%22action%22:%22open%22,%22userId%22:%22102845850757114068359%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)|使用AI Studio詢問迭代法
 [hw6](./hw6)|1.[爬山演算法](./hw6/hillClimbing.py)<br>2.[貪婪法](./hw6/greedy.py)<br>3.[改良法](./hw6/bubble.py)(用bubblesort為基礎做改良)<br>4.[梯度下降法](./hw6/gdRegression.py)(老師程式碼)<br>
-[hw7](./river.py)|狼，羊，甘藍菜過河問題，使用[老師程式碼](https://github.com/ccc114a/py2cs/blob/master/02-演算法/02-方法/06-搜尋法/Q2-river/習題：《狼、羊、甘藍菜》過河的問題.md)，有自行理解並加註
+[hw7](./river.py)|狼，羊，甘藍菜過河問題，使用[老師程式碼]，有自行理解並加註(https://github.com/ccc114a/py2cs/blob/master/02-演算法/02-方法/06-搜尋法/Q2-river/習題：《狼、羊、甘藍菜》過河的問題.md)，有自行理解並加註
 [hw8](./hw8.md)|使用 Gemini
 [hw9](./hw9.md)|使用 Gemini
 [hw10](./hw10.py)|參考[教材範例](https://github.com/ccc114a/py2cs/blob/master/02-演算法/02-方法/09b-蒙地卡羅法/02b-integration/int2b.py)
