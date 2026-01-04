@@ -4,7 +4,7 @@ import numpy as np
 策略：
 在當前位置，試探上、下、左、右 四個方向（截距與斜率的加減）。
 計算這四個新位置的 Loss，直接移動到 Loss 最小的那個位置。
-如果四個方向都沒有比較好，就縮小步伐 (step size) 繼續找，直到步伐極小為止。
+如果四個方向都沒有比較好，就縮小step大小繼續找，直到step極小為止。
 '''
 # 準備數據
 x = np.array([0, 1, 2, 3, 4], dtype=np.float32)
@@ -23,7 +23,7 @@ def MSE(a, x, y):
 def loss(p):
     return MSE(p, x, y)
 
-# 貪婪演算法 (Greedy Search)
+# 貪婪演算法
 def greedy_regression(f, start_p, start_h=0.1, min_h=0.0001):
     p = list(start_p)
     h = start_h
@@ -36,7 +36,7 @@ def greedy_regression(f, start_p, start_h=0.1, min_h=0.0001):
         best_loss = current_loss
         
         # 定義四個鄰居方向：(截距+h, 斜率), (截距-h, 斜率), (截距, 斜率+h), (截距, 斜率-h)
-        # 貪婪策略：窮舉所有鄰居，找出最好的一個
+        # 窮舉所有鄰居，找出最好的一個
         candidates = [
             [p[0] + h, p[1]], # Intercept +
             [p[0] - h, p[1]], # Intercept -
@@ -60,13 +60,13 @@ def greedy_regression(f, start_p, start_h=0.1, min_h=0.0001):
             # print(f"Moved to: {p}, loss={current_loss:.4f}") 
         else:
             # 如果四周都沒比較好，代表在目前解析度下已經是谷底
-            # 縮小步伐 (h)，進行更精細的搜尋
+            # 縮小step size (h)，進行更精細的搜尋
             h = h * 0.5
             # print(f"Narrowing step to {h}")
 
     return p, current_loss
 
-# 執行與繪圖
+#執行
 start_p = [0.0, 0.0] 
 best_p, min_loss = greedy_regression(loss, start_p)
 
